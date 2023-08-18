@@ -1,0 +1,57 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="X3LEldenRingTool.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FrameLock" Type="System.String" Scope="User">
+      <Value Profile="(Default)">144</Value>
+    </Setting>
+    <Setting Name="GamePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E:\SteamLibrary\steamapps\common\ELDEN RING\Game</Value>
+    </Setting>
+    <Setting Name="FrameLockTicked" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Fov" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="FovTicked" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="GameSpeed" Type="System.String" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="GameSpeedTicked" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DisablePenaltyTicked" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DisableCamRotationTicked" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="GameName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">eldenring</Value>
+    </Setting>
+    <Setting Name="WidescreenTicked" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DisableSteamCheckTicked" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DisableCamLockResetTicked" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="bExit" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\bin\CLOSE ER.bat</Value>
+    </Setting>
+    <Setting Name="bCamera" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\bin\IGCSClient.exe</Value>
+    </Setting>
+    <Setting Name="bCheatEngine" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\bin\X3L Table.ct</Value>
+    </Setting>
+    <Setting Name="IIDD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">IDList.cs</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
