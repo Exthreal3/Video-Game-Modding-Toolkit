@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace X3LEldenRingTool.Properties {
+namespace X3LToolBar.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -25,163 +25,7 @@ namespace X3LEldenRingTool.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("144")]
-        public string FrameLock {
-            get {
-                return ((string)(this["FrameLock"]));
-            }
-            set {
-                this["FrameLock"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("E:\\SteamLibrary\\steamapps\\common\\ELDEN RING\\Game")]
-        public string GamePath {
-            get {
-                return ((string)(this["GamePath"]));
-            }
-            set {
-                this["GamePath"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool FrameLockTicked {
-            get {
-                return ((bool)(this["FrameLockTicked"]));
-            }
-            set {
-                this["FrameLockTicked"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public string Fov {
-            get {
-                return ((string)(this["Fov"]));
-            }
-            set {
-                this["Fov"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool FovTicked {
-            get {
-                return ((bool)(this["FovTicked"]));
-            }
-            set {
-                this["FovTicked"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public string GameSpeed {
-            get {
-                return ((string)(this["GameSpeed"]));
-            }
-            set {
-                this["GameSpeed"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool GameSpeedTicked {
-            get {
-                return ((bool)(this["GameSpeedTicked"]));
-            }
-            set {
-                this["GameSpeedTicked"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool DisablePenaltyTicked {
-            get {
-                return ((bool)(this["DisablePenaltyTicked"]));
-            }
-            set {
-                this["DisablePenaltyTicked"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool DisableCamRotationTicked {
-            get {
-                return ((bool)(this["DisableCamRotationTicked"]));
-            }
-            set {
-                this["DisableCamRotationTicked"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("eldenring")]
-        public string GameName {
-            get {
-                return ((string)(this["GameName"]));
-            }
-            set {
-                this["GameName"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool WidescreenTicked {
-            get {
-                return ((bool)(this["WidescreenTicked"]));
-            }
-            set {
-                this["WidescreenTicked"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool DisableSteamCheckTicked {
-            get {
-                return ((bool)(this["DisableSteamCheckTicked"]));
-            }
-            set {
-                this["DisableSteamCheckTicked"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool DisableCamLockResetTicked {
-            get {
-                return ((bool)(this["DisableCamLockResetTicked"]));
-            }
-            set {
-                this["DisableCamLockResetTicked"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("\\bin\\CLOSE ER.bat")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\CLOSE ER.bat")]
         public string bExit {
             get {
                 return ((string)(this["bExit"]));
@@ -193,19 +37,7 @@ namespace X3LEldenRingTool.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("\\bin\\IGCSClient.exe")]
-        public string bCamera {
-            get {
-                return ((string)(this["bCamera"]));
-            }
-            set {
-                this["bCamera"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("\\bin\\X3L Table.ct")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\X3L BG3 Table.ct")]
         public string bCheatEngine {
             get {
                 return ((string)(this["bCheatEngine"]));
@@ -217,13 +49,25 @@ namespace X3LEldenRingTool.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("IDList.cs")]
-        public string IIDD {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Location {
             get {
-                return ((string)(this["IIDD"]));
+                return ((string)(this["Location"]));
             }
             set {
-                this["IIDD"] = value;
+                this["Location"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Size {
+            get {
+                return ((string)(this["Size"]));
+            }
+            set {
+                this["Size"] = value;
             }
         }
     }

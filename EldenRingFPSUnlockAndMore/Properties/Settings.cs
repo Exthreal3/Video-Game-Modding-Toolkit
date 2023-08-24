@@ -1,3 +1,3 @@
-﻿namespace X3LEldenRingTool.Properties
+﻿namespace BG3Tools.Properties
 {
 }

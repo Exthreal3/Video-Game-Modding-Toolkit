@@ -2,11 +2,11 @@
 using System.Runtime.InteropServices;
 using System.Windows;
 
-[assembly: AssemblyTitle("X3L Elden Ring Tool")]
+[assembly: AssemblyTitle("BG3Tools")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("X3LEldenRingTool")]
+[assembly: AssemblyProduct("BG3Tools")]
 [assembly: AssemblyCopyright("Copyright © X3L 2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

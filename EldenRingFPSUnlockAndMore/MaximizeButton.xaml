@@ -1,0 +1,66 @@
+﻿<Window x:Class="X3LToolBar.MaximizeButton"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:X3LToolBar"
+        xmlns:p="clr-namespace:X3LToolBar.Properties" 
+        mc:Ignorable="d"
+        Top="0"
+        Left="1920"
+        Title="Main Tool Bar" 
+        Background="Transparent" 
+        Width="38" Height="1032" 
+        SizeToContent="WidthAndHeight" 
+        ResizeMode="CanMinimize" 
+        WindowStartupLocation="Manual" 
+        VerticalAlignment="Bottom" 
+        HorizontalAlignment="Left" 
+        MinHeight="0" 
+        HorizontalContentAlignment="Left" 
+        VerticalContentAlignment="Bottom" 
+        Topmost="True" WindowState="Normal" 
+        ShowInTaskbar="true" 
+        WindowStyle="None" 
+        AllowsTransparency="True">
+
+    <Grid Name="Grid1" 
+          Background="Transparent" 
+          Height="1032" 
+          VerticalAlignment="Center" 
+          Width="38">
+
+        <StackPanel Name="Bar" 
+                    HorizontalAlignment="Center" 
+                    Orientation="Vertical" 
+                    Background="Transparent" 
+                    Width="38">
+
+            <Button x:Name="bMaximizeProgram" 
+                      Foreground="White" 
+                      FontSize="48" 
+                      IsEnabled="true" 
+                      Content="" 
+                      BorderThickness="1"
+                      Click="bMaximizeProgram_Click"  
+                      ClickMode="Press" 
+                      Background="#FF66CAEC" 
+                      HorizontalAlignment="Left" 
+                      Width="30" 
+                      Height="30"
+                      RenderTransformOrigin="0.261,0.237">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="998" X="4"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            
+        </StackPanel>
+        
+    </Grid>
+    
+</Window>

@@ -1,0 +1,244 @@
+﻿<Window x:Class="X3LToolBar.ToolBar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:X3LToolBar"
+        xmlns:p="clr-namespace:X3LToolBar.Properties" 
+        mc:Ignorable="d"
+        Top="0"
+        Left="1920"
+        Title="Main Tool Bar" 
+        Background="Transparent" 
+        Width="38" Height="1032" 
+        SizeToContent="WidthAndHeight" 
+        ResizeMode="CanMinimize" 
+        WindowStartupLocation="Manual" 
+        VerticalAlignment="Bottom" 
+        HorizontalAlignment="Left" 
+        MinHeight="0" 
+        HorizontalContentAlignment="Left" 
+        VerticalContentAlignment="Bottom" 
+        Topmost="True" WindowState="Normal" 
+        ShowInTaskbar="true" 
+        WindowStyle="None" 
+        AllowsTransparency="True">
+
+    <Grid Name="Grid1" 
+          Background="Transparent" 
+          Height="1032" 
+          VerticalAlignment="Center" 
+          Width="38">
+
+        <StackPanel Name="Bar" 
+                    HorizontalAlignment="Center" 
+                    Orientation="Vertical" 
+                    Background="#FF202020" 
+                    Width="38">
+
+            <Button x:Name="bCloseProgram" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="true" 
+                    Content="X" 
+                    BorderThickness="1" 
+                    Background="#FF960000"
+                    Focusable="False" 
+                    IsTabStop="False" 
+                    Click="bCloseProgram_Click" 
+                    FontWeight="Heavy" 
+                    FontFamily="Arial Black" 
+                    ClickMode="Press" 
+                    Width="30" 
+                    Height="30" 
+                    Margin="0,4,0,4"/>
+
+            <Button x:Name="bBG3Tools" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="true" 
+                    Content="" 
+                    BorderThickness="1"
+                    Focusable="False" 
+                    IsTabStop="False" 
+                    Click="bBG3Tools_Click" 
+                    Padding="0,-1,0,0" 
+                    ClickMode="Press" 
+                    Width="30" 
+                    Height="30" 
+                    Margin="0,0,0,4">
+                <Button.Background>
+                    <ImageBrush ImageSource="/baldurs-gate-3-button-02a-1559953190283.jpg">
+                        <ImageBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                                <RotateTransform CenterX="0.5" CenterY="0.5"/>
+                                <TranslateTransform X="0.02"/>
+                            </TransformGroup>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="bERTools" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="true" 
+                    Content="" 
+                    BorderThickness="1"
+                    Focusable="False" 
+                    IsTabStop="False" 
+                    Click="bERTools_Click" 
+                    Padding="0,-1,0,0" 
+                    ClickMode="Press" 
+                    Width="30" 
+                    Height="30" 
+                    Margin="0,0,0,4">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Elden Ring.jpg" Stretch="UniformToFill" TileMode="None">
+                        <ImageBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="1.3" ScaleY="1.3"/>
+                                <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                                <RotateTransform CenterX="0.5" CenterY="0.5"/>
+                                <TranslateTransform X="0.01"/>
+                            </TransformGroup>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="bCMD" 
+                Foreground="White" 
+                FontSize="14 px" 
+                IsEnabled="true" 
+                Content="" 
+                BorderThickness="1"
+                Focusable="False" 
+                IsTabStop="False" 
+                Click="bCMD_Click" 
+                Padding="0,-1,0,0" 
+                ClickMode="Press" 
+                Width="30" 
+                Height="30" RenderTransformOrigin="0.5,0.5" 
+                    >
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="858"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.Background>
+                    <ImageBrush ImageSource="/cmd-exe-command-line-interface-computer-icons-onenote.jpg" Stretch="UniformToFill" TileMode="None">
+                        <ImageBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="1.3" ScaleY="1.3"/>
+                                <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                                <RotateTransform CenterX="0.5" CenterY="0.5"/>
+                                <TranslateTransform X="0.01"/>
+                            </TransformGroup>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="bMinimizeProgram" 
+                      Foreground="White" 
+                      FontSize="48" 
+                      IsEnabled="true" 
+                      Content="" 
+                      BorderThickness="1"
+                      Click="bMinimizeProgram_Click"  
+                      ClickMode="Press" 
+                      Background="#FF66CAEC" 
+                      HorizontalAlignment="Left" 
+                      Width="30" 
+                      Height="30"
+                      RenderTransformOrigin="0.261,0.237">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="862" X="4"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <Button x:Name="bPowershell" 
+                Foreground="White" 
+                FontSize="14 px" 
+                IsEnabled="true" 
+                Content="" 
+                BorderThickness="1"
+                Focusable="False" 
+                IsTabStop="False" 
+                Click="bPowershell_Click" 
+                Padding="0,-1,0,0" 
+                ClickMode="Press" 
+                Width="30" 
+                Height="30" RenderTransformOrigin="0.5,0.5" 
+                    >
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="764"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.Background>
+                    <ImageBrush ImageSource="/powershell.png" Stretch="UniformToFill" TileMode="None">
+                        <ImageBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="1.3" ScaleY="1.3"/>
+                                <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                                <RotateTransform CenterX="0.5" CenterY="0.5"/>
+                                <TranslateTransform X="0.01"/>
+                            </TransformGroup>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="bOverwatch" 
+                Foreground="White" 
+                FontSize="14 px" 
+                IsEnabled="true" 
+                Content="" 
+                BorderThickness="1"
+                Focusable="False" 
+                IsTabStop="False" 
+                Click="bOverwatch_Click" 
+                Padding="0,-1,0,0" 
+                ClickMode="Press" 
+                Width="30" 
+                Height="30" RenderTransformOrigin="0.5,0.5" 
+                    >
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-90"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.Background>
+                    <ImageBrush ImageSource="/overwatch-2-game-logo-5k-lg.jpg" Stretch="UniformToFill" TileMode="None">
+                        <ImageBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="1" ScaleY="1"/>
+                                <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                                <RotateTransform CenterX="0.5" CenterY="0.5"/>
+                                <TranslateTransform X="0.01"/>
+                            </TransformGroup>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+
+        </StackPanel>
+
+    </Grid>
+
+</Window>
