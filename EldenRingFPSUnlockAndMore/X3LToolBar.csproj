@@ -198,9 +198,6 @@
     <Resource Include="Icons\bg3.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Icons\Toolbar.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Icons\btn_close_x.png" />
   </ItemGroup>
   <ItemGroup>
