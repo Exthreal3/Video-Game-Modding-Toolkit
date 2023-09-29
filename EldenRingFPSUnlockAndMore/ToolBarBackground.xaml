@@ -1,0 +1,55 @@
+﻿<Window x:Class="X3LToolBar.ToolBarBackground"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/exReleaseion/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:X3LToolBar"
+        xmlns:p="clr-namespace:X3LToolBar.Properties" 
+        mc:Ignorable="d"
+        Title="ToolBarBackground"
+        Top="0"
+        Left="0"
+        Width="3840"
+        Height="38"
+        VerticalAlignment="Top"
+        HorizontalAlignment="Left"
+        Topmost="True"
+        ShowInTaskbar="true"
+        WindowStyle="None"
+        AllowsTransparency="True">
+    <Window.Background>
+        <SolidColorBrush Color="#FF112F1F" Opacity="0.35"/>
+    </Window.Background>
+    <Window.Resources>
+        <!-- This style is used for buttons, to remove the WPF default 'animated' mouse over effect -->
+        <Style x:Key="MyButtonStyle" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                        BorderThickness="1"
+                        Padding="4,2" 
+                        BorderBrush="DarkGray" 
+                        CornerRadius="3" 
+                        Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Top" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="Black" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Name="grid" Height="38" HorizontalAlignment="Left" VerticalAlignment="Top" Width="3840">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1920"/>
+            <ColumnDefinition Width="1920"/>
+        </Grid.ColumnDefinitions>
+    </Grid>
+</Window>

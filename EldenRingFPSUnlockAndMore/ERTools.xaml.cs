@@ -99,11 +99,17 @@ namespace X3LToolBar
         {
             System.Diagnostics.Process.Start("E:\\SteamLibrary\\steamapps\\common\\ELDEN RING\\Game\\");
         }
-        void xReturn_Click(object sender, RoutedEventArgs e)
+        void xMinimizeProgram_Click(object sender, RoutedEventArgs e)
         {
+            ToolBar toolBar = new ToolBar();
+            toolBar.Show();
             this.Close();
         }
+        void xCloseProgram_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
 
+        }
     }
 
 }

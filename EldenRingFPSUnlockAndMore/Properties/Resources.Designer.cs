@@ -59,14 +59,5 @@ namespace X3LToolBar.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to True.
-        /// </summary>
-        internal static string BoolToVisibility {
-            get {
-                return ResourceManager.GetString("BoolToVisibility", resourceCulture);
-            }
-        }
     }
 }

@@ -20,14 +20,22 @@ using System.Windows.Forms;
 using MessageBox = System.Windows.MessageBox;
 using OpenFileDialog = Microsoft.Win32.OpenFileDialog;
 using System.Reflection;
+using System.Windows.Interop;
 
 namespace X3LToolBar
 {
     public partial class BG3Tools : Window
     {
+
         public BG3Tools()
         {
             InitializeComponent();
+        }
+
+        void xCloseProgram_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+
         }
 
         void xBG3Table_Click(object sender, RoutedEventArgs e)
@@ -90,15 +98,13 @@ namespace X3LToolBar
             System.Diagnostics.Process.Start("UnpackedData\\");
         }
 
-        void xReturn_Click(object sender, RoutedEventArgs e)
+        void xMinimizeProgram_Click(object sender, RoutedEventArgs e)
         {
+            ToolBar toolBar = new ToolBar();
+            toolBar.Show();
             this.Close();
         }
 
-        void xMinimizeProgram_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
     }
 
 }

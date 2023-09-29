@@ -2,12 +2,12 @@
 using System.Runtime.InteropServices;
 using System.Windows;
 
-[assembly: AssemblyTitle("BG3Tools")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("X3L ToolBar")]
+[assembly: AssemblyDescription("Video game modding toolkit")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BG3Tools")]
-[assembly: AssemblyCopyright("Copyright © X3L 2023")]
+[assembly: AssemblyCompany("Goode ltd.")]
+[assembly: AssemblyProduct("X3L ToolBar")]
+[assembly: AssemblyCopyright("Copyright © Jamie Goode 2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]

@@ -1,18 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BG3Tools.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
   <Profiles />
-  <Settings>
-    <Setting Name="xExit" Type="System.String" Scope="User">
-      <Value Profile="(Default)">\CLOSE ER.bat</Value>
-    </Setting>
-    <Setting Name="xCheatEngine" Type="System.String" Scope="User">
-      <Value Profile="(Default)">\X3L BG3 Table.ct</Value>
-    </Setting>
-    <Setting Name="Location" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="Size" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-  </Settings>
+  <Settings />
 </SettingsFile>

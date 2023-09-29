@@ -29,14 +29,18 @@ namespace X3LToolBar
     {
         public MaximizeButton()
         {
-            ToolBar toolBar = new ToolBar();
-            toolBar.ShowDialog();
             InitializeComponent();
         }
-        async void xMaximizeProgram_Click(object sender, RoutedEventArgs e)
+        void xMaximizeProgram_Click(object sender, RoutedEventArgs e)
         {
             ToolBar toolBar = new ToolBar();
-            toolBar.ShowDialog();
+            toolBar.Show();
+            this.Close();
+        }
+        void xCloseProgram_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+
         }
     }
 

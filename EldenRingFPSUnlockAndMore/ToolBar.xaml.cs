@@ -22,18 +22,19 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Diagnostics.Eventing.Reader;
 using System.Windows.Controls;
+using System.Windows.Markup;
+using System.Windows.Navigation;
+using System.Windows.Interop;
 
 namespace X3LToolBar
 {
 
     public partial class ToolBar : Window
     {
-
         public ToolBar()
         {
             InitializeComponent();
         }
-
 
         public void ExecuteAsAdmin(string fileName)
         {
@@ -53,7 +54,8 @@ namespace X3LToolBar
         void xBG3Tools_Click(object sender, RoutedEventArgs e)
         {
             BG3Tools wBG3Tools = new BG3Tools();
-            wBG3Tools.ShowDialog();
+            wBG3Tools.Show();
+            this.Close();
         }
 
         void xCloseProgram_Click(object sender, RoutedEventArgs e)
@@ -62,8 +64,10 @@ namespace X3LToolBar
 
         }
 
-        async void xMinimizeProgram_Click(object sender, RoutedEventArgs e)
+        void xMinimizeProgram_Click(object sender, RoutedEventArgs e)
         {
+            MaximizeButton maximizeButton = new MaximizeButton();
+            maximizeButton.Show();
             this.Close();
         }
 
@@ -79,8 +83,8 @@ namespace X3LToolBar
 
         void xOverwatch_Click(object sender, RoutedEventArgs e)
         {
-            Overwatch wOverwatch = new Overwatch();
-            wOverwatch.ShowDialog();
+            Overwatch xOverwatch = new Overwatch();
+            xOverwatch.ShowDialog();
         }
 
         void xYTDLP_Click(object sender, RoutedEventArgs e)

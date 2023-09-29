@@ -39,14 +39,17 @@ namespace X3LToolBar
             proc.Start();
         }
 
-        void xReturn_Click(object sender, RoutedEventArgs e)
+        void xMinimizeProgram_Click(object sender, RoutedEventArgs e)
         {
+            ToolBar toolBar = new ToolBar();
+            toolBar.Show();
             this.Close();
         }
 
-        void xMinimizeProgram_Click(object sender, RoutedEventArgs e)
+        void xCloseProgram_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            System.Windows.Application.Current.Shutdown();
+
         }
 
         void xOverwatch_Click(object sender, RoutedEventArgs e)
