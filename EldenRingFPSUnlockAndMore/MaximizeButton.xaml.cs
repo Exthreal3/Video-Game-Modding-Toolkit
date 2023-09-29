@@ -33,7 +33,7 @@ namespace X3LToolBar
             toolBar.ShowDialog();
             InitializeComponent();
         }
-        async void bMaximizeProgram_Click(object sender, RoutedEventArgs e)
+        async void xMaximizeProgram_Click(object sender, RoutedEventArgs e)
         {
             ToolBar toolBar = new ToolBar();
             toolBar.ShowDialog();

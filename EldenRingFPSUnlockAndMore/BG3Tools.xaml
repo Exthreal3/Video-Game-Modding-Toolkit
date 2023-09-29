@@ -6,8 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:X3LToolBar"
         xmlns:p="clr-namespace:X3LToolBar.Properties" 
-        Top="0"
-        Left="1920"
+        Top="38"
         mc:Ignorable="d"
         Title="BG3Tools"
         Width="252" 
@@ -46,7 +45,7 @@
                        Width="252" 
                        HorizontalAlignment="Left">
                 
-                <Button x:Name="bGameData" 
+                <Button x:Name="xGameData" 
                         Margin="7,7,7,7" 
                         Foreground="White" 
                         FontSize="14 px" 
@@ -56,12 +55,12 @@
                         Background="#FF4E8647"
                         Focusable="False" 
                         IsTabStop="False" 
-                        Click="bGameData_Click" 
+                        Click="xGameData_Click" 
                         Width="95" 
                         Height="60" 
                         ClickMode="Press" DockPanel.Dock="Right"/>
                 
-                <Button x:Name="bGameBin" 
+                <Button x:Name="xGameBin" 
                         Margin="7,7,7,7" 
                         Foreground="White" 
                         FontSize="14 px" 
@@ -71,21 +70,21 @@
                         Background="#FF4E8647"
                         Focusable="False" 
                         IsTabStop="False" 
-                        Click="bGameBin_Click" 
+                        Click="xGameBin_Click" 
                         Width="95" 
                         Height="60" 
                         ClickMode="Press" DockPanel.Dock="Right"/>
                 
-                <Button x:Name="bReturn" 
+                <Button x:Name="xReturn" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="true" 
                         Content="" 
                         BorderThickness="1" 
-                        Background="#00000000"
+                        Background="#FFFFEA00"
                         Focusable="False" 
                         IsTabStop="False" 
-                        Click="bReturn_Click" 
+                        Click="xReturn_Click" 
                         IsCancel="True" 
                         ClickMode="Press" 
                         RenderTransformOrigin="0.5,0.5" 
@@ -111,7 +110,7 @@
                        Width="228" 
                        HorizontalAlignment="Right">
                 
-                <Button x:Name="bSaveFiles" 
+                <Button x:Name="xSaveFiles" 
                         Margin="7,7,7,7" 
                         Foreground="White" 
                         FontSize="14 px" 
@@ -119,12 +118,12 @@
                         Content="Saves" 
                         BorderThickness="1" 
                         Background="#FFC18212"
-                        Click="bSaveFiles_Click" 
+                        Click="xSaveFiles_Click" 
                         Width="95" 
                         Height="60" 
                         ClickMode="Press" DockPanel.Dock="Right"/>
                 
-                <Button x:Name="bMods" 
+                <Button x:Name="xMods" 
                         Margin="0,7,7,7" 
                         Foreground="White" 
                         FontSize="14 px" 
@@ -132,13 +131,13 @@
                         Content="Mods" 
                         BorderThickness="1" 
                         Background="#FFC18212"
-                        Click="bMods_Click" 
+                        Click="xMods_Click" 
                         Width="95" 
                         Height="60" 
                         ClickMode="Press" DockPanel.Dock="Right" HorizontalAlignment="Right"/>
             </DockPanel>
             
-            <Button x:Name="bUnpackedFiles" 
+            <Button x:Name="xUnpackedFiles" 
                     Foreground="White" 
                     Margin="7,7,7,7" 
                     Width="204" 
@@ -148,7 +147,7 @@
                     Content="Unpacked Files" 
                     BorderThickness="1" 
                     Background="#FFC18212"
-                    Click="bUnpackedFiles_Click" 
+                    Click="xUnpackedFiles_Click" 
                     ClickMode="Press" 
                     HorizontalContentAlignment="Center" 
                     RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right">
@@ -162,7 +161,7 @@
                 </Button.RenderTransform>
             </Button>
             
-            <Button x:Name="bModManager" 
+            <Button x:Name="xModManager" 
                     Content="Mod Manager" 
                     Foreground="White" 
                     Margin="7,7,7,7" 
@@ -172,11 +171,11 @@
                     IsEnabled="True" 
                     BorderThickness="1" 
                     Background="#FF8E1111"
-                    Click="bModManager_Click" 
+                    Click="xModManager_Click" 
                     HorizontalAlignment="Right" 
                     ClickMode="Press"/>
             
-            <Button x:Name="bExportTool" 
+            <Button x:Name="xExportTool" 
                     Foreground="White" 
                     Margin="7,7,7,7" 
                     Width="136" 
@@ -186,11 +185,11 @@
                     Content="Export Tool" 
                     BorderThickness="1" 
                     Background="#FF8E1111"
-                    Click="bExportTool_Click" 
+                    Click="xExportTool_Click" 
                     HorizontalAlignment="Right" 
                     ClickMode="Press"/>
             
-            <Button x:Name="bCameraTool" 
+            <Button x:Name="xCameraTool" 
                     Foreground="White" 
                     Margin="7,7,7,7" 
                     Width="136" 
@@ -200,11 +199,11 @@
                     Content="Camera Tool" 
                     BorderThickness="1" 
                     Background="#FF8E1111"
-                    Click="bCameraTool_Click" 
+                    Click="xCameraTool_Click" 
                     HorizontalAlignment="Right" 
                     ClickMode="Press"/>
             
-            <Button x:Name="bMiniTool" 
+            <Button x:Name="xMiniTool" 
                     Foreground="White" 
                     Margin="7,7,7,7" 
                     Width="136" 
@@ -214,11 +213,11 @@
                     Content="Mini Tool" 
                     BorderThickness="1" 
                     Background="#FF8E1111"
-                    Click="bMiniTool_Click" 
+                    Click="xMiniTool_Click" 
                     HorizontalAlignment="Right" 
                     ClickMode="Press"/>
             
-            <Button x:Name="bMultiTool" 
+            <Button x:Name="xMultiTool" 
                     Foreground="White" 
                     Margin="7,7,7,7" 
                     Width="136" 
@@ -228,7 +227,7 @@
                     Content="Multi Tool" 
                     BorderThickness="1" 
                     Background="#FF8E1111"
-                    Click="bMultiTool_Click" 
+                    Click="xMultiTool_Click" 
                     HorizontalAlignment="Right" 
                     ClickMode="Press"/>
             
@@ -237,7 +236,7 @@
                        Width="228" 
                        HorizontalAlignment="Right">
                 
-                <Button x:Name="bBG3Table" 
+                <Button x:Name="xBG3Table" 
                         Margin="7,7,7,7" 
                         Foreground="White" 
                         FontSize="14 px" 
@@ -245,12 +244,12 @@
                         Content="Vulkan Table" 
                         BorderThickness="1" 
                         Background="#FF02496D"
-                        Click="bBG3Table_Click" 
+                        Click="xBG3Table_Click" 
                         Width="95" 
                         Height="60"
                         ClickMode="Press" HorizontalAlignment="Right" DockPanel.Dock="Right"/>
                 
-                <Button x:Name="bBG3_DX11Table" 
+                <Button x:Name="xBG3_DX11Table" 
                         Margin="0,7,7,7" 
                         Foreground="White" 
                         FontSize="14 px" 
@@ -258,7 +257,7 @@
                         Content="DX11 Table" 
                         BorderThickness="1" 
                         Background="#FF02496D"
-                        Click="bBG3_DX11Table_Click" 
+                        Click="xBG3_DX11Table_Click" 
                         Width="95" 
                         Height="60" 
                         ClickMode="Press" HorizontalAlignment="Right"/>

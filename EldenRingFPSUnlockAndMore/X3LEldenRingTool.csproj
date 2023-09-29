@@ -162,37 +162,43 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="BG3ModManager.ico" />
+    <Resource Include="Icons\BG3ModManager.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="IGCSIcon.ico" />
+    <Resource Include="Icons\IGCSIcon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="MultiTool.ico" />
+    <Resource Include="Icons\MultiTool.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="X3L.png" />
+    <Resource Include="Icons\X3L.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="bg3_icon.ico" />
+    <Resource Include="Icons\bg3_icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="baldurs-gate-3-button-02a-1559953190283.jpg" />
+    <Resource Include="Icons\baldurs-gate-3-button-02a-1559953190283.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Elden Ring.jpg" />
+    <Resource Include="Icons\Elden Ring.jpg" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="cmd-exe-command-line-interface-computer-icons-onenote.jpg" />
+    <Resource Include="Icons\cmd-exe-command-line-interface-computer-icons-onenote.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="powershell.png" />
+    <Resource Include="Icons\powershell.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="overwatch-2-game-logo-5k-lg.jpg" />
+    <Resource Include="Icons\overwatch-2-game-logo-5k-lg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\b6a8d716-9c7b-40ec-bc44-6422d8b741a0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="baldurs-gate-3-button-02a-1559953190283.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

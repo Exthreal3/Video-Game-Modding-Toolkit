@@ -2,10 +2,10 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BG3Tools.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="bExit" Type="System.String" Scope="User">
+    <Setting Name="xExit" Type="System.String" Scope="User">
       <Value Profile="(Default)">\CLOSE ER.bat</Value>
     </Setting>
-    <Setting Name="bCheatEngine" Type="System.String" Scope="User">
+    <Setting Name="xCheatEngine" Type="System.String" Scope="User">
       <Value Profile="(Default)">\X3L BG3 Table.ct</Value>
     </Setting>
     <Setting Name="Location" Type="System.String" Scope="User">

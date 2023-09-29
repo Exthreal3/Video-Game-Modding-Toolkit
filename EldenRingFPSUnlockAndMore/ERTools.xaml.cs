@@ -30,76 +30,76 @@ namespace X3LToolBar
             InitializeComponent();
         }
 
-        void bBinderTool_Click(object sender, RoutedEventArgs e)
+        void xBinderTool_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\ER\\BinderTool\\");
         }
 
-        void bCameraTool_Click(object sender, RoutedEventArgs e)
+        void xCameraTool_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\ER\\Camera Tools\\IGCSClient.exe");
         }
 
-        void bDSAnimStudio_Click(object sender, RoutedEventArgs e)
+        void xDSAnimStudio_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\ER\\DS Anim Studio\\DS ANIM STUDIO.exe");
         }
 
-        void bDSMapStudio_Click(object sender, RoutedEventArgs e)
+        void xDSMapStudio_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\ER\\DSMapStudio\\DSMapStudio.exe");
         }
 
-        void bGideon_Click(object sender, RoutedEventArgs e)
+        void xGideon_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\ER\\Gideon\\Gideon.exe");
         }
 
-        void bModelTemplates_Click(object sender, RoutedEventArgs e)
+        void xModelTemplates_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\ER\\Model Templates\\");
         }
 
-        void bMTDEditor_Click(object sender, RoutedEventArgs e)
+        void xMTDEditor_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\ER\\MTD Editor\\MTD-Editor.exe");
         }
 
-        void bSMDTool_Click(object sender, RoutedEventArgs e)
+        void xSMDTool_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\ER\\SMD Tool\\");
         }
 
-        void bUXMUnpacker_Click(object sender, RoutedEventArgs e)
+        void xUXMUnpacker_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\ER\\UXM Unpacker\\UXM Selective Unpack.exe");
         }
 
-        void bWwiseUnpacker_Click(object sender, RoutedEventArgs e)
+        void xWwiseUnpacker_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\ER\\Wwise Unpacker\\");
         }
-        void bX3LTool_Click(object sender, RoutedEventArgs e)
+        void xX3LTool_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\ER\\X3L Tool\\X3L Elden Ring Tool.exe");
         }
-        void bYabber_Click(object sender, RoutedEventArgs e)
+        void xYabber_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\ER\\Yabber\\");
         }
-        void bYapped_Click(object sender, RoutedEventArgs e)
+        void xYapped_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\ER\\Yapped\\Yapped-Rune-Bear.exe");
         }
-        void bAquaModelTool_Click(object sender, RoutedEventArgs e)
+        void xAquaModelTool_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\ER\\AquaModelTool\\SoulsModelTool.exe");
         }
-        void bERGame_Click(object sender, RoutedEventArgs e)
+        void xERGame_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("E:\\SteamLibrary\\steamapps\\common\\ELDEN RING\\Game\\");
         }
-        void bReturn_Click(object sender, RoutedEventArgs e)
+        void xReturn_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }

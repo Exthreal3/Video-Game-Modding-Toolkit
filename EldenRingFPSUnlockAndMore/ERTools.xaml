@@ -7,7 +7,6 @@
         xmlns:local="clr-namespace:X3LToolBar"
         xmlns:p="clr-namespace:X3LToolBar.Properties" 
         Top="0"
-        Left="1920"
         mc:Ignorable="d"
         Title="Elden Ring Tools"
         Width="252" 
@@ -47,38 +46,41 @@
                        HorizontalAlignment="Right" 
                        Height="74">
 
-                <Button x:Name="bReturn" 
+                <Button x:Name="xReturn" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="true" 
                         Content="" 
                         BorderThickness="1" 
-                        Background="#00000000"
-                        Click="bReturn_Click" 
+                        Background="#FFFFEA00"
+                        Focusable="False" 
+                        IsTabStop="False" 
+                        Click="xReturn_Click" 
                         IsCancel="True" 
                         ClickMode="Press" 
                         RenderTransformOrigin="0.5,0.5" 
                         VerticalContentAlignment="Top" 
                         Width="30" 
-                        Height="30" VerticalAlignment="Top" HorizontalAlignment="Left">
+                        Height="30">
+
                     <Button.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
                             <SkewTransform/>
                             <RotateTransform/>
-                            <TranslateTransform X="4" Y="4"/>
+                            <TranslateTransform X="2" Y="-18"/>
                         </TransformGroup>
                     </Button.RenderTransform>
                 </Button>
 
-                <Button x:Name="bERGame" 
+                <Button x:Name="xERGame" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="true" 
                         Content="[Game]" 
                         BorderThickness="1" 
                         Background="#FF02496D"
-                        Click="bERGame_Click" 
+                        Click="xERGame_Click" 
                         IsCancel="True" 
                         ClickMode="Press" 
                         Margin="7,7,7,7" 
@@ -86,14 +88,14 @@
                         Width="95" 
                         Height="60" DockPanel.Dock="Right"/>
 
-                <Button x:Name="bModelTemplates" 
+                <Button x:Name="xModelTemplates" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="true" 
                         Content="[Templates]" 
                         BorderThickness="1" 
                         Background="#FF02496D"
-                        Click="bModelTemplates_Click" 
+                        Click="xModelTemplates_Click" 
                         ClickMode="Press" 
                         Margin="7,7,7,7" 
                         Width="95" 
@@ -104,28 +106,28 @@
             
             <DockPanel HorizontalAlignment="Right">
 
-                <Button x:Name="bAquaModelTool" 
+                <Button x:Name="xAquaModelTool" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="True" 
                         Content="Aqua Model Tool" 
                         BorderThickness="1" 
                         Background="#FF8E1111"
-                        Click="bAquaModelTool_Click" 
+                        Click="xAquaModelTool_Click" 
                         ClickMode="Press" 
                         Margin="7,7,7,7" 
                         HorizontalAlignment="Right" 
                         Height="60" 
                         Width="95"/>
                 
-                <Button x:Name="bUXMUnpacker" 
+                <Button x:Name="xUXMUnpacker" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="True" 
                         Content="UXM Unpacker" 
                         BorderThickness="1" 
                         Background="#FF8E1111"
-                        Click="bUXMUnpacker_Click" 
+                        Click="xUXMUnpacker_Click" 
                         ClickMode="Press" 
                         Margin="7,7,7,7" 
                         HorizontalAlignment="Right" 
@@ -136,28 +138,28 @@
             
             <DockPanel HorizontalAlignment="Right">
                 
-                <Button x:Name="bWwiseUnpacker" 
+                <Button x:Name="xWwiseUnpacker" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="True" 
                         Content="Wwise Unpacker" 
                         BorderThickness="1" 
                         Background="#FF8E1111"
-                        Click="bWwiseUnpacker_Click" 
+                        Click="xWwiseUnpacker_Click" 
                         ClickMode="Press" 
                         Margin="7,7,7,7" 
                         HorizontalAlignment="Right" 
                         Height="60" 
                         Width="95"/>
                 
-                <Button x:Name="bX3LTool" 
+                <Button x:Name="xX3LTool" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="True" 
                         Content="X3L Tool" 
                         BorderThickness="1" 
                         Background="#FF8E1111"
-                        Click="bX3LTool_Click" 
+                        Click="xX3LTool_Click" 
                         ClickMode="Press" 
                         Margin="7,7,7,7" 
                         HorizontalAlignment="Right" 
@@ -167,28 +169,28 @@
             
             <DockPanel HorizontalAlignment="Right">
                 
-                <Button x:Name="bYabber" 
+                <Button x:Name="xYabber" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="True" 
                         Content="Yabber" 
                         BorderThickness="1" 
                         Background="#FF8E1111"
-                        Click="bYabber_Click" 
+                        Click="xYabber_Click" 
                         ClickMode="Press" 
                         Margin="7,7,7,7" 
                         HorizontalAlignment="Right" 
                         Height="60" 
                         Width="95"/>
                 
-                <Button x:Name="bYapped" 
+                <Button x:Name="xYapped" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="True" 
                         Content="Yapped" 
                         BorderThickness="1" 
                         Background="#FF8E1111"
-                        Click="bYapped_Click" 
+                        Click="xYapped_Click" 
                         ClickMode="Press"
                         Margin="7,7,7,7" 
                         HorizontalAlignment="Right" 
@@ -198,28 +200,28 @@
             
             <DockPanel HorizontalAlignment="Right">
                 
-                <Button x:Name="bUXMUnpacker_Copy" 
+                <Button x:Name="xUXMUnpacker_Copy" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="True" 
                         Content="UXM Unpacker" 
                         BorderThickness="1" 
                         Background="#FF8E1111"
-                        Click="bUXMUnpacker_Click" 
+                        Click="xUXMUnpacker_Click" 
                         ClickMode="Press" 
                         Margin="7,7,7,7" 
                         HorizontalAlignment="Right" 
                         Height="60" 
                         Width="95"/>
                 
-                <Button x:Name="bCameraTool" 
+                <Button x:Name="xCameraTool" 
                         Content="Camera" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="True" 
                         BorderThickness="1" 
                         Background="#FF8E1111"
-                        Click="bCameraTool_Click" 
+                        Click="xCameraTool_Click" 
                         ClickMode="Press" 
                         RenderTransformOrigin="0.5,0.5"
                         Margin="7,7,7,7" 
@@ -239,14 +241,14 @@
             
             <DockPanel HorizontalAlignment="Right">
                 
-                <Button x:Name="bDSAnimStudio" 
+                <Button x:Name="xDSAnimStudio" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="True" 
                         Content="DS Anim Studio" 
                         BorderThickness="1" 
                         Background="#FF8E1111"
-                        Click="bDSAnimStudio_Click" 
+                        Click="xDSAnimStudio_Click" 
                         ClickMode="Press" 
                         RenderTransformOrigin="0.5,0.5"
                         Margin="7,7,7,7" 
@@ -254,14 +256,14 @@
                         Height="60" 
                         Width="95"/>
                 
-                <Button x:Name="bDSMapStudio" 
+                <Button x:Name="xDSMapStudio" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="True" 
                         Content="DS Map Studio" 
                         BorderThickness="1" 
                         Background="#FF8E1111"
-                        Click="bDSMapStudio_Click" 
+                        Click="xDSMapStudio_Click" 
                         ClickMode="Press" 
                         RenderTransformOrigin="0.5,0.5"
                         Margin="7,7,7,7" 
@@ -272,14 +274,14 @@
             
             <DockPanel HorizontalAlignment="Right">
                 
-                <Button x:Name="bGideon" 
+                <Button x:Name="xGideon" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="True" 
                         Content="Gideon" 
                         BorderThickness="1" 
                         Background="#FF8E1111"
-                        Click="bGideon_Click" 
+                        Click="xGideon_Click" 
                         Margin="7,7,7,7"
                         ClickMode="Press" 
                         RenderTransformOrigin="0.5,0.5"
@@ -287,14 +289,14 @@
                         Height="60" 
                         Width="95"/>
                 
-                <Button x:Name="bMTDEditor" 
+                <Button x:Name="xMTDEditor" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="True" 
                         Content="MTD Editor" 
                         BorderThickness="1" 
                         Background="#FF8E1111"
-                        Click="bMTDEditor_Click" 
+                        Click="xMTDEditor_Click" 
                         ClickMode="Press" 
                         RenderTransformOrigin="0.5,0.5"
                         Margin="7,7,7,7" 
@@ -308,28 +310,28 @@
                        Width="252" 
                        HorizontalAlignment="Right">
                 
-                <Button x:Name="bBinderTool" 
+                <Button x:Name="xBinderTool" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="True" 
                         Content="Binder Tool" 
                         BorderThickness="1" 
                         Background="#FF8E1111"
-                        Click="bBinderTool_Click" 
+                        Click="xBinderTool_Click" 
                         ClickMode="Press" 
                         RenderTransformOrigin="0.5,0.5"
                         Width="95" 
                         Height="60" 
                         Margin="7,7,7,7" HorizontalAlignment="Right" DockPanel.Dock="Right"/>
                 
-                <Button x:Name="bSMDTool" 
+                <Button x:Name="xSMDTool" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="True" 
                         Content="SMD Tool" 
                         BorderThickness="1" 
                         Background="#FF8E1111"
-                        Click="bSMDTool_Click" 
+                        Click="xSMDTool_Click" 
                         ClickMode="Press"
                         Width="95" 
                         Height="60" 

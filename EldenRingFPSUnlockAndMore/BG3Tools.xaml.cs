@@ -30,72 +30,72 @@ namespace X3LToolBar
             InitializeComponent();
         }
 
-        void bBG3Table_Click(object sender, RoutedEventArgs e)
+        void xBG3Table_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\BG3\\BG3Table.CT");
         }
 
-        void bBG3_DX11Table_Click(object sender, RoutedEventArgs e)
+        void xBG3_DX11Table_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\BG3\\BG3_DX11Table.CT");
         }
 
-        void bModManager_Click(object sender, RoutedEventArgs e)
+        void xModManager_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\BG3\\ModManager\\BG3ModManager.exe");
         }
 
-        void bExportTool_Click(object sender, RoutedEventArgs e)
+        void xExportTool_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\BG3\\ExportTool\\ConverterApp.exe");
         }
 
-        void bCameraTool_Click(object sender, RoutedEventArgs e)
+        void xCameraTool_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\BG3\\CameraTool\\IGCSClient.exe");
         }
 
-        void bMiniTool_Click(object sender, RoutedEventArgs e)
+        void xMiniTool_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\BG3\\MiniTool\\BG3 Mini Tool.exe");
         }
 
-        void bMultiTool_Click(object sender, RoutedEventArgs e)
+        void xMultiTool_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("bin\\BG3\\MultiTool\\bg3-modders-multitool.exe");
         }
 
-        void bSaveFiles_Click(object sender, RoutedEventArgs e)
+        void xSaveFiles_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("C:\\Users\\jayan\\AppData\\Local\\Larian Studios\\Baldur's Gate 3\\PlayerProfiles\\Public\\");
+            System.Diagnostics.Process.Start("C:\\Users\\Xavier\\AppData\\Local\\Larian Studios\\Baldur's Gate 3\\PlayerProfiles\\Public\\");
         }
 
-        void bMods_Click(object sender, RoutedEventArgs e)
+        void xMods_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("C:\\Users\\jayan\\AppData\\Local\\Larian Studios\\Baldur's Gate 3\\Mods\\");
+            System.Diagnostics.Process.Start("C:\\Users\\Xavier\\AppData\\Local\\Larian Studios\\Baldur's Gate 3\\Mods\\");
         }
 
-        void bGameData_Click(object sender, RoutedEventArgs e)
+        void xGameData_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("E:\\New folder\\Baldurs Gate 3\\Data\\");
+            System.Diagnostics.Process.Start("D:\\SteamLibrary\\steamapps\\common\\Baldurs Gate 3\\Data\\");
         }
 
-        void bGameBin_Click(object sender, RoutedEventArgs e)
+        void xGameBin_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("E:\\New folder\\Baldurs Gate 3\\Bin\\");
+            System.Diagnostics.Process.Start("D:\\SteamLibrary\\steamapps\\common\\Baldurs Gate 3\\Bin\\");
         }
 
-        void bUnpackedFiles_Click(object sender, RoutedEventArgs e)
+        void xUnpackedFiles_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("bin\\BG3\\MultiTool\\UnpackedData\\");
+            System.Diagnostics.Process.Start("UnpackedData\\");
         }
 
-        void bReturn_Click(object sender, RoutedEventArgs e)
+        void xReturn_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
-        void bMinimizeProgram_Click(object sender, RoutedEventArgs e)
+        void xMinimizeProgram_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }

@@ -10,11 +10,11 @@
         Left="1920"
         Title="Main Tool Bar" 
         Background="Transparent" 
-        Width="38" Height="1032" 
+        Width="960" Height="38" 
         SizeToContent="WidthAndHeight" 
         ResizeMode="CanMinimize" 
         WindowStartupLocation="Manual" 
-        VerticalAlignment="Bottom" 
+        VerticalAlignment="Top" 
         HorizontalAlignment="Left" 
         MinHeight="0" 
         HorizontalContentAlignment="Left" 
@@ -26,40 +26,40 @@
 
     <Grid Name="Grid1" 
           Background="Transparent" 
-          Height="1032" 
-          VerticalAlignment="Center" 
-          Width="38">
+          Height="38" 
+          VerticalAlignment="Top" 
+          Width="960" HorizontalAlignment="Left">
 
-        <StackPanel Name="Bar" 
+        <WrapPanel Name="Bar" 
                     HorizontalAlignment="Center" 
                     Orientation="Vertical" 
                     Background="Transparent" 
-                    Width="38">
+                    Width="960" Height="38">
 
-            <Button x:Name="bMaximizeProgram" 
+            <Button x:Name="xMaximizeProgram" 
                       Foreground="White" 
                       FontSize="48" 
                       IsEnabled="true" 
                       Content="" 
                       BorderThickness="1"
-                      Click="bMaximizeProgram_Click"  
+                      Click="xMaximizeProgram_Click"  
                       ClickMode="Press" 
                       Background="#FF66CAEC" 
                       HorizontalAlignment="Left" 
                       Width="30" 
                       Height="30"
-                      RenderTransformOrigin="0.261,0.237">
+                      RenderTransformOrigin="0.261,0.237" VerticalAlignment="Top" Margin="4,4,0,0">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
                         <SkewTransform/>
                         <RotateTransform/>
-                        <TranslateTransform Y="998" X="4"/>
+                        <TranslateTransform Y="0" X="0"/>
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
             
-        </StackPanel>
+        </WrapPanel>
         
     </Grid>
     

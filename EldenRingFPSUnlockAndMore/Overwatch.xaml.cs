@@ -39,24 +39,24 @@ namespace X3LToolBar
             proc.Start();
         }
 
-        void bReturn_Click(object sender, RoutedEventArgs e)
+        void xReturn_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
-        void bMinimizeProgram_Click(object sender, RoutedEventArgs e)
+        void xMinimizeProgram_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
-        void bOverwatch_Click(object sender, RoutedEventArgs e)
+        void xOverwatch_Click(object sender, RoutedEventArgs e)
         {
-            ExecuteAsAdmin("C:\\Users\\Administrator\\Desktop\\TEMP PROGRAM\\bin\\Overwatch\\Overwatch.bat");
+            ExecuteAsAdmin("D:\\X3L Toolbar\\bin\\Overwatch\\Overwatch.bat");
         }
 
-        void bCinematics_Click(object sender, RoutedEventArgs e)
+        void xCinematics_Click(object sender, RoutedEventArgs e)
         {
-            ExecuteAsAdmin("C:\\Users\\Administrator\\Desktop\\TEMP PROGRAM\\bin\\Overwatch\\Cinematics.bat");
+            ExecuteAsAdmin("D:\\X3L Toolbar\\bin\\Overwatch\\Cinematics.bat");
         }
     }
 

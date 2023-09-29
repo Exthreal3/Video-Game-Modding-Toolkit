@@ -46,7 +46,7 @@
                        Width="252" 
                        HorizontalAlignment="Left">
                 
-                <Button x:Name="bCinematics" 
+                <Button x:Name="xCinematics" 
                         Margin="7,7,7,7" 
                         Foreground="White" 
                         FontSize="14 px" 
@@ -56,12 +56,12 @@
                         Background="#FF4E8647"
                         Focusable="False" 
                         IsTabStop="False" 
-                        Click="bCinematics_Click" 
+                        Click="xCinematics_Click" 
                         Width="95" 
                         Height="60" 
                         ClickMode="Press" DockPanel.Dock="Right"/>
                 
-                <Button x:Name="bOverwatch" 
+                <Button x:Name="xOverwatch" 
                         Margin="7,7,7,7" 
                         Foreground="White" 
                         FontSize="14 px" 
@@ -71,28 +71,28 @@
                         Background="#FF4E8647"
                         Focusable="False" 
                         IsTabStop="False" 
-                        Click="bOverwatch_Click" 
+                        Click="xOverwatch_Click" 
                         Width="95" 
                         Height="60" 
                         ClickMode="Press" DockPanel.Dock="Right"/>
-                
-                <Button x:Name="bReturn" 
+
+                <Button x:Name="xReturn" 
                         Foreground="White" 
                         FontSize="14 px" 
                         IsEnabled="true" 
                         Content="" 
                         BorderThickness="1" 
-                        Background="#00000000"
+                        Background="#FFFFEA00"
                         Focusable="False" 
                         IsTabStop="False" 
-                        Click="bReturn_Click" 
+                        Click="xReturn_Click" 
                         IsCancel="True" 
                         ClickMode="Press" 
                         RenderTransformOrigin="0.5,0.5" 
                         VerticalContentAlignment="Top" 
                         Width="30" 
                         Height="30">
-                    
+
                     <Button.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -102,7 +102,7 @@
                         </TransformGroup>
                     </Button.RenderTransform>
                 </Button>
-                
+
             </DockPanel>
 
         </StackPanel>
