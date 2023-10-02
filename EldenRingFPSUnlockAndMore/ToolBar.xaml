@@ -120,7 +120,23 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-
+            <Button Style="{StaticResource MyButtonStyle}" x:Name="xConfigWindow" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="true" 
+                    Content="" 
+                    BorderThickness="1"
+                    Focusable="False" 
+                    IsTabStop="False" 
+                    Click="xConfigWindow_Click" 
+                    Padding="0,-1,0,0" 
+                    ClickMode="Release" 
+                    Width="30" 
+                    Height="30" 
+                    Margin="4,4,0,0" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" Background="#FF007507"/>
+            
             <Button Style="{StaticResource MyButtonStyle}" x:Name="xBG3Tools" 
                     Foreground="White" 
                     FontSize="14 px" 

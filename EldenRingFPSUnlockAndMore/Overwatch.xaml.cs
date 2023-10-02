@@ -54,12 +54,12 @@ namespace X3LToolBar
 
         void xOverwatch_Click(object sender, RoutedEventArgs e)
         {
-            ExecuteAsAdmin("D:\\X3L Toolbar\\bin\\Overwatch\\Overwatch.bat");
+            ExecuteAsAdmin("\\bin\\Overwatch\\Overwatch.bat");
         }
 
         void xCinematics_Click(object sender, RoutedEventArgs e)
         {
-            ExecuteAsAdmin("D:\\X3L Toolbar\\bin\\Overwatch\\Cinematics.bat");
+            ExecuteAsAdmin("\\bin\\Overwatch\\Cinematics.bat");
         }
     }
 

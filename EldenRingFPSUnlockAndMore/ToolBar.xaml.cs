@@ -50,7 +50,11 @@ namespace X3LToolBar
             ERTools wERTools = new ERTools();
             wERTools.ShowDialog();
         }
-
+        private void xConfigWindow_Click(object sender, RoutedEventArgs e)
+        {
+            ConfigWindow configWindow = new ConfigWindow();
+            configWindow.ShowDialog();
+        }
         void xBG3Tools_Click(object sender, RoutedEventArgs e)
         {
             BG3Tools wBG3Tools = new BG3Tools();
