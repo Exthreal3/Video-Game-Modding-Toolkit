@@ -1,0 +1,166 @@
+﻿<Window x:Class="X3LToolBar.Overwatch"
+        Background="Transparent" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/exReleaseion/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:X3LToolBar"
+        xmlns:p="clr-namespace:X3LToolBar.Properties" 
+        Top="0"
+        Left="0"
+        mc:Ignorable="d"
+        Title="Overwatch"
+        Width="3840" 
+        Height="38" 
+        VerticalAlignment="Top" 
+        HorizontalAlignment="Left"
+        Topmost="True"
+        ShowInTaskbar="True" 
+        WindowStyle="None" 
+        AllowsTransparency="True">
+    
+    <Window.Resources>
+        <!-- This style is used for buttons, to remove the WPF default 'animated' mouse over effect -->
+        <Style x:Key="MyButtonStyle" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                        BorderThickness="1"
+                        Padding="4,2" 
+                        BorderBrush="DarkGray" 
+                        CornerRadius="3" 
+                        Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Top" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="Black" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    
+    <Grid Background="Transparent" 
+          HorizontalAlignment="Left" 
+          VerticalAlignment="Top"
+          Width="3840" 
+          Height="38">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1920"/>
+            <ColumnDefinition Width="1920"/>
+        </Grid.ColumnDefinitions>
+
+        <WrapPanel Grid.Column="0" 
+                   Background="Transparent" 
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Width="3048" 
+                   Height="38">
+            
+            <Button x:Name="xCloseProgram" 
+                    Foreground="{x:Null}" 
+                    FontSize="14 px" 
+                    IsEnabled="true" 
+                    BorderThickness="1"
+                    Click="xCloseProgram_Click" 
+                    ClickMode="Release"
+                    Width="30" 
+                    Height="30" 
+                    VerticalAlignment="Top" 
+                    Margin="4,4,0,0" 
+                    HorizontalAlignment="Left">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Image x:Name="xExitimg" Source="/Icons/btn_close_d.png"/>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Source" Value="pack://application:,,,/X3LToolBar;component/Icons/btn_close_h.png" TargetName="xExitimg"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Source" Value="pack://application:,,,/X3LToolBar;component/Icons/btn_close_x.png" TargetName="xExitimg"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <Button x:Name="xMinimizeProgram" 
+                    FontSize="14 px" 
+                    IsEnabled="true" 
+                    Content="" 
+                    BorderThickness="1"
+                    Focusable="False" 
+                    IsTabStop="False" 
+                    Click="xMinimizeProgram_Click" 
+                    IsCancel="True" 
+                    ClickMode="Release" 
+                    VerticalContentAlignment="Top" 
+                    Width="30" 
+                    Height="30" 
+                    Margin="12,4,4,4" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="{x:Null}" Padding="1,1,1,1">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Image x:Name="xMaximizeimg" Source="/Icons/ico_navLeft_d.png"/>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Source" Value="pack://application:,,,/X3LToolBar;component/Icons/ico_navLeft_h.png" TargetName="xMaximizeimg"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Source" Value="pack://application:,,,/X3LToolBar;component/Icons/ico_navLeft_x.png" TargetName="xMaximizeimg"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <Button Style="{StaticResource MyButtonStyle}" x:Name="xCinematics" 
+                    Margin="4,4,4,4" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="True" 
+                    Content="Cinematics"
+                    BorderThickness="1" 
+                    Background="#FF4E8647"
+                    Click="xCinematics_Click" 
+                    Width="95" 
+                    Height="30" 
+                    ClickMode="Release" />
+
+            <Button Style="{StaticResource MyButtonStyle}" 
+                    x:Name="xOverwatch" 
+                    Margin="4,4,4,4" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="True" 
+                    Content="Overwatch" 
+                    BorderThickness="1" 
+                    Background="#FF4E8647"
+                    Focusable="False" 
+                    IsTabStop="False" 
+                    Click="xOverwatch_Click" 
+                    Width="95" 
+                    Height="30" 
+                    ClickMode="Release"/>
+
+        </WrapPanel>
+    
+    </Grid>
+    
+</Window>

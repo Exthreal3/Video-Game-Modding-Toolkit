@@ -1,0 +1,387 @@
+﻿<Window x:Class="X3LToolBar.ERTools"
+        Background="Transparent" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/exReleaseion/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:X3LToolBar"
+        xmlns:p="clr-namespace:X3LToolBar.Properties" 
+        Top="0"
+        Left="0"
+        mc:Ignorable="d"
+        Title="Elden Ring Tools"
+        Width="3840"
+        Height="38" 
+        VerticalAlignment="Top"
+        HorizontalAlignment="Left"
+        Topmost="True" 
+        ShowInTaskbar="True" 
+        WindowStyle="None" 
+        AllowsTransparency="True">
+    
+    <Window.Resources>
+        <!-- This style is used for buttons, to remove the WPF default 'animated' mouse over effect -->
+        <Style x:Key="MyButtonStyle" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                        BorderThickness="1"
+                        Padding="4,2" 
+                        BorderBrush="DarkGray" 
+                        CornerRadius="3" 
+                        Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Top" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="Black" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    
+    <Grid Background="Transparent" 
+          HorizontalAlignment="Center" 
+          Width="3840" 
+          Height="38">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1920"/>
+            <ColumnDefinition Width="1920"/>
+        </Grid.ColumnDefinitions>
+
+        <WrapPanel Grid.Column="0" 
+                    Background="Transparent" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top"
+                    Width="3840" 
+                    Height="38" 
+                    Margin="0,0,0,0">
+            
+            <Button x:Name="xCloseProgram" 
+                    Foreground="{x:Null}" 
+                    FontSize="14 px" 
+                    IsEnabled="true" 
+                    Content="X" 
+                    BorderThickness="1"
+                    Focusable="False" 
+                    IsTabStop="False" 
+                    Click="xCloseProgram_Click" 
+                    FontWeight="Heavy" 
+                    FontFamily="Arial Black" 
+                    ClickMode="Release" 
+                    Width="30" 
+                    Height="30" 
+                    VerticalAlignment="Top" 
+                    Margin="4,4,0,0" HorizontalAlignment="Left" BorderBrush="{x:Null}">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Image x:Name="xExitimg" Source="/Icons/btn_close_d.png"/>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Source" Value="pack://application:,,,/X3LToolBar;component/Icons/btn_close_h.png" TargetName="xExitimg"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Source" Value="pack://application:,,,/X3LToolBar;component/Icons/btn_close_x.png" TargetName="xExitimg"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <Button x:Name="xMinimizeProgram" 
+                    FontSize="14 px" 
+                    IsEnabled="true" 
+                    Content="" 
+                    BorderThickness="1"
+                    Focusable="False" 
+                    IsTabStop="False" 
+                    Click="xMinimizeProgram_Click" 
+                    IsCancel="True" 
+                    ClickMode="Release" 
+                    VerticalContentAlignment="Top" 
+                    Width="30" 
+                    Height="30" 
+                    Margin="12,4,4,4" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="{x:Null}" Padding="1,1,1,1">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Image x:Name="xMaximizeimg" Source="/Icons/ico_navLeft_d.png"/>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Source" Value="pack://application:,,,/X3LToolBar;component/Icons/ico_navLeft_h.png" TargetName="xMaximizeimg"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Source" Value="pack://application:,,,/X3LToolBar;component/Icons/ico_navLeft_x.png" TargetName="xMaximizeimg"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <Button Style="{StaticResource MyButtonStyle}" 
+                    x:Name="xERGame" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="true" 
+                    Content="Game" 
+                    BorderThickness="1" 
+                    Background="#FF02496D"
+                    Click="xERGame_Click" 
+                    IsCancel="True" 
+                    ClickMode="Release" 
+                    Margin="4,4,4,4" 
+                    HorizontalAlignment="Left" 
+                    Width="50" 
+                    Height="30"/>
+
+            <Button Style="{StaticResource MyButtonStyle}" 
+                    x:Name="xModelTemplates" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="true" 
+                    Content="Templates" 
+                    BorderThickness="1" 
+                    Background="#FF02496D"
+                    Click="xModelTemplates_Click" 
+                    ClickMode="Release" 
+                    Margin="4,4,4,4" 
+                    Width="80" 
+                    Height="30" 
+                    HorizontalAlignment="Left" />
+
+            <Button Style="{StaticResource MyButtonStyle}" 
+                    x:Name="xAquaModelTool" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="True" 
+                    Content="Aqua Model Tool" 
+                    BorderThickness="1" 
+                    Background="#FF8E1111"
+                    Click="xAquaModelTool_Click" 
+                    ClickMode="Release" 
+                    Margin="4,4,4,4" 
+                    HorizontalAlignment="Left" 
+                    Height="30" 
+                    Width="120"/>
+                
+            <Button Style="{StaticResource MyButtonStyle}" 
+                    x:Name="xUXMUnpacker" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="True" 
+                    Content="UXM Unpacker" 
+                    BorderThickness="1" 
+                    Background="#FF8E1111"
+                    Click="xUXMUnpacker_Click" 
+                    ClickMode="Release" 
+                    Margin="4,4,4,4" 
+                    HorizontalAlignment="Left" 
+                    Width="110" 
+                    Height="30"/>
+                
+            <Button Style="{StaticResource MyButtonStyle}" 
+                    x:Name="xWwiseUnpacker" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="True" 
+                    Content="Wwise Unpacker" 
+                    BorderThickness="1" 
+                    Background="#FF8E1111"
+                    Click="xWwiseUnpacker_Click" 
+                    ClickMode="Release" 
+                    Margin="4,4,4,4" 
+                    HorizontalAlignment="Left" 
+                    Height="30" 
+                    Width="120"/>
+                
+            <Button Style="{StaticResource MyButtonStyle}" 
+                    x:Name="xX3LTool" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="True" 
+                    Content="X3L Tool" 
+                    BorderThickness="1" 
+                    Background="#FF8E1111"
+                    Click="xX3LTool_Click" 
+                    ClickMode="Release" 
+                    Margin="4,4,4,4" 
+                    HorizontalAlignment="Left" 
+                    Height="30" 
+                    Width="70"/>
+
+            <Button Style="{StaticResource MyButtonStyle}" 
+                    x:Name="xYabber" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="True" 
+                    Content="Yabber" 
+                    BorderThickness="1" 
+                    Background="#FF8E1111"
+                    Click="xYabber_Click" 
+                    ClickMode="Release" 
+                    Margin="4,4,4,4" 
+                    HorizontalAlignment="Left" 
+                    Height="30" 
+                    Width="70"/>
+                
+            <Button Style="{StaticResource MyButtonStyle}" 
+                    x:Name="xYapped" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="True" 
+                    Content="Yapped" 
+                    BorderThickness="1" 
+                    Background="#FF8E1111"
+                    Click="xYapped_Click" 
+                    ClickMode="Release"
+                    Margin="4,4,4,4" 
+                    HorizontalAlignment="Left" 
+                    Height="30" 
+                    Width="70"/>
+
+            <Button Style="{StaticResource MyButtonStyle}" 
+                    x:Name="xUXMUnpacker_Copy" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="True" 
+                    Content="UXM Unpacker" 
+                    BorderThickness="1" 
+                    Background="#FF8E1111"
+                    Click="xUXMUnpacker_Click" 
+                    ClickMode="Release" 
+                    Margin="4,4,4,4" 
+                    HorizontalAlignment="Left" 
+                    Height="30" 
+                    Width="110"/>
+
+            <Button Style="{StaticResource MyButtonStyle}" 
+                    x:Name="xCameraTool" 
+                    Content="Camera" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="True" 
+                    BorderThickness="1" 
+                    Background="#FF8E1111"
+                    Click="xCameraTool_Click" 
+                    ClickMode="Release" 
+                    RenderTransformOrigin="0.5,0.5"
+                    Margin="4,4,4,4" 
+                    HorizontalAlignment="Left" 
+                    Height="30" 
+                    Width="70"/>
+
+            <Button Style="{StaticResource MyButtonStyle}" 
+                    x:Name="xDSAnimStudio" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="True" 
+                    Content="DS Anim Studio" 
+                    BorderThickness="1" 
+                    Background="#FF8E1111"
+                    Click="xDSAnimStudio_Click" 
+                    ClickMode="Release" 
+                    RenderTransformOrigin="0.5,0.5"
+                    Margin="4,4,4,4" 
+                    HorizontalAlignment="Left" 
+                    Height="30" 
+                    Width="110"/>
+                
+            <Button Style="{StaticResource MyButtonStyle}" 
+                    x:Name="xDSMapStudio" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="True" 
+                    Content="DS Map Studio" 
+                    BorderThickness="1" 
+                    Background="#FF8E1111"
+                    Click="xDSMapStudio_Click" 
+                    ClickMode="Release" 
+                    RenderTransformOrigin="0.5,0.5"
+                    Margin="4,4,4,4" 
+                    HorizontalAlignment="Left" 
+                    Height="30" 
+                    Width="110"/>
+
+            <Button Style="{StaticResource MyButtonStyle}" 
+                    x:Name="xGideon" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="True" 
+                    Content="Gideon" 
+                    BorderThickness="1" 
+                    Background="#FF8E1111"
+                    Click="xGideon_Click" 
+                    Margin="4,4,4,4"
+                    ClickMode="Release" 
+                    RenderTransformOrigin="0.5,0.5"
+                    HorizontalAlignment="Left" 
+                    Height="30" 
+                    Width="70" VerticalAlignment="Top"/>
+
+            <Button Style="{StaticResource MyButtonStyle}" 
+                    x:Name="xMTDEditor" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="True" 
+                    Content="MTD Editor" 
+                    BorderThickness="1" 
+                    Background="#FF8E1111"
+                    Click="xMTDEditor_Click" 
+                    ClickMode="Release" 
+                    RenderTransformOrigin="0.5,0.5"
+                    Margin="4,4,4,4" 
+                    HorizontalAlignment="Left" 
+                    Height="30"
+                    Width="95"/>
+
+            <Button Style="{StaticResource MyButtonStyle}" 
+                    x:Name="xBinderTool" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="True" 
+                    Content="Binder Tool" 
+                    BorderThickness="1" 
+                    Background="#FF8E1111"
+                    Click="xBinderTool_Click" 
+                    ClickMode="Release" 
+                    Width="95" 
+                    Height="30" 
+                    Margin="4,4,4,4" 
+                    HorizontalAlignment="Left" />
+
+            <Button Style="{StaticResource MyButtonStyle}" 
+                    x:Name="xSMDTool" 
+                    Foreground="White" 
+                    FontSize="14 px" 
+                    IsEnabled="True" 
+                    Content="SMD Tool" 
+                    BorderThickness="1" 
+                    Background="#FF8E1111"
+                    Click="xSMDTool_Click" 
+                    ClickMode="Release"
+                    Width="80" 
+                    Height="30" 
+                    HorizontalAlignment="Left" 
+                    Margin="4,4,4,4"/>
+
+            </WrapPanel>
+
+    </Grid>
+
+</Window>
