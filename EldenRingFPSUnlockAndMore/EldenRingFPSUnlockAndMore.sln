@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "X3LEldenRingTool", "X3LEldenRingTool.csproj", "{1E4DEB86-6420-49C9-B0CB-40375C706F5C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "X3LToolBar", "X3LToolBar.csproj", "{087CBDD6-6DF6-48D9-A37E-84CDCE2E2B5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E4DEB86-6420-49C9-B0CB-40375C706F5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E4DEB86-6420-49C9-B0CB-40375C706F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E4DEB86-6420-49C9-B0CB-40375C706F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E4DEB86-6420-49C9-B0CB-40375C706F5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{087CBDD6-6DF6-48D9-A37E-84CDCE2E2B5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{087CBDD6-6DF6-48D9-A37E-84CDCE2E2B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{087CBDD6-6DF6-48D9-A37E-84CDCE2E2B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{087CBDD6-6DF6-48D9-A37E-84CDCE2E2B5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A88F5E0-A0B5-4A79-9896-20D03EBDFE5F}
+	EndGlobalSection
+EndGlobal
